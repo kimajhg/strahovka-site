@@ -1,62 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
   <meta charset="UTF-8">
-  <title>Возврат страховки</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страховка қайтару</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #6dd5ed, #2193b0);
-      color: #333;
-    }
-    header {
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 20px;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                  url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 50px 20px;
     }
-    header h1 {
-      margin: 0;
-      color: #2193b0;
-    }
-    main {
-      max-width: 600px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
     }
     p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 10px;
       font-size: 18px;
-      line-height: 1.6;
+      color: white;
+      background-color: #28a745;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
     }
-    .contact {
-      margin-top: 20px;
-      padding: 15px;
-      background: #f0f8ff;
-      border-left: 4px solid #2193b0;
-    }
-    .contact b {
-      color: #2193b0;
+    .btn:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Страховка қайтару</h1>
-  </header>
-  <main>
-    <p>
-      Займ немесе кредит алғаныңызға <b>14 күннен аспаса</b> страховка ақшасын қайтарамыз. 
-      Тура займ алған күні жазсаныз, қайтарылатын сумма көбірек болады. Сондықтан бірден жазған дұрыс.
-    </p>
-    <div class="contact">
-      <p><b>Телефон:</b> 8 (708) 113 37 62</p>
-      <p><b>Email:</b> guldanaberikhanova91@gmail.com</p>
-    </div>
-  </main>
+  <h1>Страховка қайтару</h1>
+  <p>Займ немесе кредит алғаныңызға 14 күннен аспаса, 
+     страховка ақшасын қайтарамыз. 
+     Тура займ алған күні жазсаңыз, 
+     қайтарым сомасы көбірек болады.</p>
+
+  <a href="tel:+77081133762" class="btn">📞 Қоңырау шалу</a>
+  <a href="mailto:guldanaberikhanova91@gmail.com" class="btn">✉️ Жазу</a>
 </body>
 </html>

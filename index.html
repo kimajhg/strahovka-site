@@ -7,89 +7,53 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #e0f7fa, #ffffff);
-      color: #333;
       text-align: center;
+      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+      padding: 40px;
+      color: #333;
     }
-    header {
-      background: #00897b;
-      color: white;
+    h1 {
+      color: #00695c;
+    }
+    .card {
+      background: white;
       padding: 20px;
-      font-size: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 0 auto 20px;
     }
-    .content {
-      padding: 30px 20px;
-    }
-    .lang {
-      margin-bottom: 20px;
-    }
-    button {
-      background: #00897b;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      margin: 5px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .contacts {
-      margin-top: 30px;
-    }
-    .btn {
+    .button {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background: #25d366; /* зеленый WhatsApp */
+      margin: 15px;
+      padding: 14px 22px;
+      background: #25D366;
       color: white;
-      border-radius: 50px;
-      font-size: 16px;
       text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: background 0.3s;
     }
-    .btn.email {
-      background: #4285f4; /* синий для email */
-    }
-    .btn:hover {
-      opacity: 0.9;
+    .button:hover {
+      background: #1DA851;
     }
   </style>
 </head>
 <body>
-  <header>
-    Страховка қайтару / Возврат страховки
-  </header>
+  <div class="card">
+    <h1>Страховка қайтару</h1>
+    <p><b>Займ немесе кредит алғаныңызға 14 күннен аспаса</b>, 
+    страховка ақшасын қайтарамыз. <br> 
+    Егер дәл займ алған күні жазсаңыз, қайтарым сомасы көбірек болады. 
+    Сондықтан бірден жазыңыз!</p>
 
-  <div class="content">
-    <div class="lang" id="kk">
-      <h2>Страховка ақшасын қайтару</h2>
-      <p>Егер займ немесе кредит алғаныңызға 14 күннен аспаса, біз сіздің страховка ақшаңызды қайтарамыз.</p>
-      <p>Займ алған күні жазсаңыз, қайтатын ақша көбірек болады. Сондықтан уақыт созбай бірден хабарласыңыз.</p>
-    </div>
+    <h1>Возврат страховки</h1>
+    <p><b>Если с момента получения займа или кредита прошло не более 14 дней</b>, 
+    мы вернём деньги за страховку. <br> 
+    Чем раньше вы напишете (лучше в тот же день), тем больше сумма возврата!</p>
 
-    <div class="lang" id="ru" style="display:none;">
-      <h2>Возврат страховки</h2>
-      <p>Если с момента получения займа или кредита прошло не более 14 дней, мы вернём вам деньги за страховку.</p>
-      <p>Чем раньше обратитесь (в тот же день), тем больше сумма возврата. Поэтому пишите сразу!</p>
-    </div>
-
-    <div>
-      <button onclick="showLang('kk')">Қазақша</button>
-      <button onclick="showLang('ru')">Русский</button>
-    </div>
-
-  <div class="contact">
-    <a class="btn whatsapp" href="https://api.whatsapp.com/send?phone=77081133762" target="_blank">Написать в WhatsApp</a>
-    <a class="btn email" href="mailto:guldanaberikhanova91@gmail.com">Написать на Email</a>
-</div>
+    <a href="https://wa.me/77081133762" target="_blank" class="button">📲 Написать в WhatsApp</a>
   </div>
-
-  <script>
-    function showLang(lang) {
-      document.getElementById("kk").style.display = (lang === 'kk') ? "block" : "none";
-      document.getElementById("ru").style.display = (lang === 'ru') ? "block" : "none";
-    }
-  </script>
 </body>
 </html>
